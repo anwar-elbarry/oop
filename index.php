@@ -1,18 +1,16 @@
-<?php
- class utilisateur {
-
-    protected $nom ;
-    protected $prenome ;
-    protected $typ_utilisateur ;
-
-    public function afficherNomComplet(){
-       return  $this ->nome $this ->prenome;
-    };
-    public function changerNom($nome){
-        $this -> nome = $nome;
-    };
-    public function changerPrenom($prenome){
-        $this -> prenome = $prenome;
-    };
-}
+<?php 
+require("utilisateur.php");
+require("patient.php");
+require("medcin.php");
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    
+</body>
+</html>
