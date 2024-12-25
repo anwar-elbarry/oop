@@ -1,18 +1,25 @@
 <?php 
- class utilisateur {
+class Utilisateur {
+    protected $nom;
+    protected $prenom;
+    protected $type_utilisateur;
 
-    protected $nom ;
-    protected $prenome ;
-    protected $typ_utilisateur ;
+    public function __construct($nom, $prenom, $type_utilisateur) {
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->type_utilisateur = $type_utilisateur;
+    }
 
-    public function afficherNomComplet(){
-       return  $this ->nome $this ->prenome;
-    };
-    public function changerNom($nome){
-        $this -> nome = $nome;
-    };
-    public function changerPrenom($prenome){
-        $this -> prenome = $prenome;
-    };
+    public function afficherNomComplet() {
+        return $this->nom . " " . $this->prenom;
+    }
+
+    public function changerNom($nom) {
+        $this->nom = $nom;
+    }
+
+    public function changerPrenom($prenom) {
+        $this->prenom = $prenom;
+    }
 }
 ?>
